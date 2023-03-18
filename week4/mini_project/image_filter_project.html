@@ -1,0 +1,36 @@
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Mini-Project Image Filters</h1>
+<h3>Image Canvas</h3>
+<canvas id="imgCanvas">
+</canvas>
+
+
+<div>
+  Upload Image:
+  <input type="file" multiple="false" accept="images/*" id="imgUpload" onchange="uploadImage()">
+</div>
+
+<p><em>
+ 
+  Apply the discreet filters below to the loaded image</em>
+
+</p>
+<p>
+  <input type="button" class="clsRed" value=" Red Hue  " onclick="doRedFilter()">
+  <input type="button" class="clsGreen" value=" Green Hue " onclick="doGreenFilter()">
+  <input type="button" class="clsBlue" value=" Blue Hue  " onclick="doBlueFilter()">
+  <input type="button" class="clsRbow" value=" Rainbow Filter  " onclick="doRainbowFilter()">
+  <input type="button" class="clsClear" value=" Clear Image " onclick="clearImage()">
+</p>
+
+<p>
+  <input type="button" class="clsBlur" value="Blur Image" onclick="doBlurFilter()"> 
+  <input type="button" class="clsWindow" value="Window Filter" onclick="doWindowPaneFilter()">
+  <input type="button" class="clsGrey" value="Greyscale Filter" 
+ onclick="doGreyScaleFilter()">
+
+  <input type="button" class="clsReset" value="Reset Filter" onclick="resetImage()">
+</p>
+</body>
